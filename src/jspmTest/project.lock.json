@@ -4,7 +4,8 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4",
-      "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4"
+      "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4",
+      "Node.js >= 0.12.0"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
@@ -1569,6 +1570,35 @@
         "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "Node.js/0.12.0": {
+      "serviceable": false,
+      "sha": "ebdkS9f69X17ugZAvyw0oK1bkVB9Q5L85YwaYWuSGtp4z1gVLhnuuHa7ZBBZWr8UzIVJkcengGPBOnOW5CURAg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "node.exe",
+        "Node.js.0.12.0.nupkg",
+        "Node.js.0.12.0.nupkg.sha512",
+        "Node.js.nuspec",
+        "readme.txt",
+        "content/.bin/node.cmd",
+        "tools/bin_tools.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "System.Collections/4.0.10-beta-22816": {
