@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
 using Microsoft.Framework.DependencyInjection;
+using Microsoft.AspNet.StaticFiles;
 
 namespace jspmTest
 {
@@ -17,10 +18,12 @@ namespace jspmTest
 
         public void Configure(IApplicationBuilder app)
         {
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseStaticFiles();
+            app.UseFileServer(new FileServerOptions
+             {
+                 EnableDefaultFiles = true,
+                 EnableDirectoryBrowsing = true,
+             });
         }
     }
 }
